@@ -52,7 +52,7 @@ class LinkedList
         remove_tail
       else
         current_node = @head
-        while !current_node.nil? && current_node.next != node
+        while current_node.next != node
           current_node = current_node.next
         end
         if current_node.next === node && current_node != @tail
