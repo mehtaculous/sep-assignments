@@ -9,14 +9,14 @@ class MyQueue
   end
 
   def enqueue(element)
-    @queue.insert(0, element)
+    @queue.insert(-1, element)
     @head = @queue[0]
     @tail = @queue[-1]
   end
 
   def dequeue
     if !empty?
-      @queue.delete_at(-1)
+      @queue.delete_at(0)
     end
     @head = @queue[0]
     @tail = @queue[-1]
