@@ -27,7 +27,7 @@ class LinkedList
       @tail = nil
     else
       current_node = @head
-      while !current_node.nil? && current_node.next != @tail
+      while current_node.next != @tail
         current_node = current_node.next
       end
     end
