@@ -30,8 +30,9 @@ class LinkedList
       while current_node.next != @tail
         current_node = current_node.next
       end
+      current_node.next = nil
+      @tail = current_node
     end
-    @tail = current_node
   end
 
   # This method prints out a representation of the list.
